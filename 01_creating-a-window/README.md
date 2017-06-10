@@ -2,11 +2,13 @@
 
 This example demonstrates how to create a new window with SDL.
 
+[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/02_handling-events)
+
 ## Getting Started
 
 Before diving right into the code, we need to set up our development environment.
-[LazyFoo](http://lazyfoo.net/) has excellent guides for setting up SDL on each major OS platform in
-his [Lesson 01](http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php) SDL tutorial.
+[Lazy Foo'](http://lazyfoo.net/) has excellent guides for setting up SDL on each major OS platform
+in his [Lesson 01](http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php) SDL tutorial.
 
 > These examples are designed specifically for Linux using the [clang](https://clang.llvm.org/)
 > compiler and [Visual Studio Code](https://code.visualstudio.com/). Compiling is performed on the
@@ -152,3 +154,21 @@ with [`SDL_Quit()`](http://wiki.libsdl.org/SDL_Quit).
 > function for every `Create` function or calling the `Quit` function for any `Init` function. Other
 > APIs use similar conventions. If you create objects in C++ using the `new` keyword, be sure to
 > destroy that object by using the `delete` keyword.
+
+---
+
+[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/02_handling-events)
+
+## Resources
+* [Lazy Foo's Lesson 01](http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php)
+* [SDL_Init()](http://wiki.libsdl.org/SDL_Init)
+* [SDL_CreateWindow()](http://wiki.libsdl.org/SDL_CreateWindow)
+* [SDL_GetWindowSurface()](http://wiki.libsdl.org/SDL_GetWindowSurface)
+* [SDL_FillRect()](http://wiki.libsdl.org/SDL_FillRect)
+* [SDL_MapRGB()](http://wiki.libsdl.org/SDL_MapRGB)
+* [SDL_UpdateWindowSurface()](http://wiki.libsdl.org/SDL_UpdateWindowSurface)
+* [SDL_Delay()](http://wiki.libsdl.org/SDL_Delay)
+* [SDL_DestroyWindow()](http://wiki.libsdl.org/SDL_DestroyWindow)
+* [SDL_Quit()](http://wiki.libsdl.org/SDL_Quit)
+* [SDL Logging](http://wiki.libsdl.org/CategoryLog)
+* [Surface VS Renderer](https://stackoverflow.com/questions/21007329/what-is-a-sdl-renderer)

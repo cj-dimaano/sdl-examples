@@ -8,6 +8,13 @@ References:
 http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php
 http://wiki.libsdl.org/SDL_Init
 http://wiki.libsdl.org/SDL_CreateWindow
+http://wiki.libsdl.org/SDL_GetWindowSurface
+http://wiki.libsdl.org/SDL_FillRect
+http://wiki.libsdl.org/SDL_MapRGB
+http://wiki.libsdl.org/SDL_UpdateWindowSurface
+http://wiki.libsdl.org/SDL_Delay
+http://wiki.libsdl.org/SDL_DestroyWindow
+http://wiki.libsdl.org/SDL_Quit
 http://wiki.libsdl.org/CategoryLog
 https://stackoverflow.com/questions/21007329/what-is-a-sdl-renderer
 
