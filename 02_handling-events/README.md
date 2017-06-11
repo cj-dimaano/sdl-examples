@@ -9,7 +9,8 @@ Two other software engineering concepts are introduced here: event (or message) 
 abstraction (or separation of concerns). Very little discussion of these concepts will be provided
 in these examples.
 
-[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/01_creating-a-window)
+[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/01_creating-a-window) |
+[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/03_rendering-an-image)
 
 ## The Code
 
@@ -343,7 +344,8 @@ Once the event queue is emptied, we change the color of the window and update th
 
 ---
 
-[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/01_creating-a-window)
+[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/01_creating-a-window) |
+[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/03_rendering-an-image)
 
 ## Resources
 * [Lazy Foo's Lesson 03](http://lazyfoo.net/tutorials/SDL/03_event_driven_programming/index.php)
