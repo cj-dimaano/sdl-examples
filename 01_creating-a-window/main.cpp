@@ -2,21 +2,22 @@
 File: main.cpp
 Created by: CJ Dimaano
 Date created: June 7, 2017
-Last updated: June 8, 2017
+Last updated: June 11, 2017
 
 References:
-http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php
-http://wiki.libsdl.org/SDL_Init
-http://wiki.libsdl.org/SDL_CreateWindow
-http://wiki.libsdl.org/SDL_GetWindowSurface
-http://wiki.libsdl.org/SDL_FillRect
-http://wiki.libsdl.org/SDL_MapRGB
-http://wiki.libsdl.org/SDL_UpdateWindowSurface
-http://wiki.libsdl.org/SDL_Delay
-http://wiki.libsdl.org/SDL_DestroyWindow
-http://wiki.libsdl.org/SDL_Quit
-http://wiki.libsdl.org/CategoryLog
-https://stackoverflow.com/questions/21007329/what-is-a-sdl-renderer
+- http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php
+- http://wiki.libsdl.org/CategoryLog
+- https://wiki.libsdl.org/SDL_Surface
+- http://wiki.libsdl.org/SDL_Init
+- http://wiki.libsdl.org/SDL_Quit
+- http://wiki.libsdl.org/SDL_CreateWindow
+- http://wiki.libsdl.org/SDL_GetWindowSurface
+- http://wiki.libsdl.org/SDL_FillRect
+- http://wiki.libsdl.org/SDL_MapRGB
+- http://wiki.libsdl.org/SDL_UpdateWindowSurface
+- http://wiki.libsdl.org/SDL_Delay
+- http://wiki.libsdl.org/SDL_DestroyWindow
+- https://stackoverflow.com/questions/21007329/what-is-a-sdl-renderer
 
 *******************************************************************************/
 
@@ -45,7 +46,7 @@ int main() {
   /*** Create the main window. ***/
   window = SDL_CreateWindow("Example 01: Creating a window",
                             SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
-                            SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_OPENGL);
+                            SCREEN_WIDTH, SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
   if (window == NULL) {
     SDL_LogError(SDL_LOG_CATEGORY_ERROR, "Unable to create window: %s\n",
                  SDL_GetError());
