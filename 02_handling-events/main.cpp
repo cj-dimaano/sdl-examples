@@ -14,7 +14,6 @@ http://wiki.libsdl.org/SDL_Event
 
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_log.h>
-#include <stdio.h>
 
 #define SCREEN_HEIGHT 480
 #define SCREEN_WIDTH 640
