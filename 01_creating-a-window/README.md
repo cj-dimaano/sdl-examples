@@ -161,7 +161,11 @@ with [`SDL_Quit()`](http://wiki.libsdl.org/SDL_Quit).
 
 ## Resources
 * [Lazy Foo's Lesson 01](http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php)
+* [SDL Logging](http://wiki.libsdl.org/CategoryLog)
+* SDL_Window
+* [SDL_Surface](https://wiki.libsdl.org/SDL_Surface)
 * [SDL_Init()](http://wiki.libsdl.org/SDL_Init)
+* [SDL_Quit()](http://wiki.libsdl.org/SDL_Quit)
 * [SDL_CreateWindow()](http://wiki.libsdl.org/SDL_CreateWindow)
 * [SDL_GetWindowSurface()](http://wiki.libsdl.org/SDL_GetWindowSurface)
 * [SDL_FillRect()](http://wiki.libsdl.org/SDL_FillRect)
@@ -169,6 +173,4 @@ with [`SDL_Quit()`](http://wiki.libsdl.org/SDL_Quit).
 * [SDL_UpdateWindowSurface()](http://wiki.libsdl.org/SDL_UpdateWindowSurface)
 * [SDL_Delay()](http://wiki.libsdl.org/SDL_Delay)
 * [SDL_DestroyWindow()](http://wiki.libsdl.org/SDL_DestroyWindow)
-* [SDL_Quit()](http://wiki.libsdl.org/SDL_Quit)
-* [SDL Logging](http://wiki.libsdl.org/CategoryLog)
 * [Surface VS Renderer](https://stackoverflow.com/questions/21007329/what-is-a-sdl-renderer)
