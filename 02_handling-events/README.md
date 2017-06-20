@@ -1,6 +1,6 @@
 # Example 02 - Handling events
 
-![Example 02 Screenshot](https://github.com/cj-dimaano/sdl-examples/tree/master/screenshots/example02.gif?raw=true)
+![Example 02 Screenshot](https://github.com/cj-dimaano/sdl-examples/blob/master/screenshots/example02.gif)
 
 In this example, we create a window that listens for events then handles the `SDL_QUIT`,
 `SDL_KEYDOWN`, and `SDL_KEYUP` events. We also introduce a very common concept in game development:
