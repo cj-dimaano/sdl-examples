@@ -1,0 +1,14 @@
+*
+
+!.gitignore
+!LICENSE.txt
+!makefile
+
+!*.md
+!*.cpp
+!*.png
+!*.gif
+!*.bmp
+!*.ttf
+
+!*/

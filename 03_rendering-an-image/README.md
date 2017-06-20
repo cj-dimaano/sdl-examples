@@ -1,5 +1,7 @@
 # Example 03 - Rendering an image
 
+![Example 03 Screenshot](https://github.com/cj-dimaano/sdl-examples/tree/master/screenshots/example03.png)
+
 In this example, we cover how to load a .png file and render it onto the window. SDL has support for
 loading .bmp images out of the box, but for anything other than a .bmp, we need to use an extension
 library.
@@ -9,7 +11,8 @@ excellent walkthrough for setting this up in his
 [Lesson 06](http://lazyfoo.net/tutorials/SDL/06_extension_libraries_and_loading_other_image_formats/index.php)
 tutorial.
 
-[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/02_handling-events)
+[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/02_handling-events) |
+[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/04_rendering-text)
 
 ## The Code
 
@@ -373,7 +376,8 @@ the changes to the user by refreshing the screen with
 
 ---
 
-[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/02_handling-events)
+[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/02_handling-events) |
+[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/04_rendering-text)
 
 ## Resources
 * [Lazy Foo's Lesson 02](http://lazyfoo.net/tutorials/SDL/02_getting_an_image_on_the_screen/index.php)
