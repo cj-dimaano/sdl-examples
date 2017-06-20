@@ -1,6 +1,6 @@
 # Example 04 - Rendering text
 
-![Example 04 Screenshot](https://github.com/cj-dimaano/sdl-examples/tree/master/screenshots/example04.png)
+![Example 04 Screenshot](https://github.com/cj-dimaano/sdl-examples/tree/master/screenshots/example04.png?raw=true)
 
 In this example, we cover how to render text. The procedure is similar to rendering an image, and
 the code uses the TTL extension library. Refer to

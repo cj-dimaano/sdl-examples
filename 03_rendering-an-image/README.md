@@ -1,6 +1,6 @@
 # Example 03 - Rendering an image
 
-![Example 03 Screenshot](https://github.com/cj-dimaano/sdl-examples/tree/master/screenshots/example03.png)
+![Example 03 Screenshot](https://github.com/cj-dimaano/sdl-examples/tree/master/screenshots/example03.png?raw=true)
 
 In this example, we cover how to load a .png file and render it onto the window. SDL has support for
 loading .bmp images out of the box, but for anything other than a .bmp, we need to use an extension
