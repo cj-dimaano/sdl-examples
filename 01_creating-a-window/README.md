@@ -174,7 +174,7 @@ with [`SDL_Quit()`][15].
 * [SDL_DestroyWindow()][14]
 * [Surface VS Renderer][12]
 
-[1]: ../blob/master/02_handling-events
+[1]: 02_handling-events
 [2]: http://lazyfoo.net/
 [3]: http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php
 [4]: https://clang.llvm.org/
