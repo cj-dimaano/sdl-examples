@@ -1,15 +1,14 @@
 # Example 04 - Rendering text
 
-![Example 04 Screenshot](https://github.com/cj-dimaano/sdl-examples/blob/master/screenshots/example04.png)
+![Example 04 Screenshot](../screenshots/example04.png)
 
 In this example, we cover how to render text. The procedure is similar to rendering an image, and
-the code uses the TTL extension library. Refer to
-[Example 03](https://github.com/cj-dimaano/sdl-examples/tree/master/03_rendering-an-image) for
-directions on how to import the library into the project.
+the code uses the TTL extension library. Refer to [Example 03][1] for directions on how to import
+the library into the project.
 
 As with the previous example, we will only cover new material.
 
-[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/03_rendering-an-image)
+[Previous][1]
 
 ## The Code
 
@@ -247,8 +246,7 @@ SDL_Texture *createTextureFromText(const char * const text) {
   }
 ```
 
-We initialize `SDL_ttf` similarly to how we initialize `SDL_image` by calling
-[`TTF_Init()`](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC8).
+We initialize `SDL_ttf` similarly to how we initialize `SDL_image` by calling [`TTF_Init()`][2].
 
 ```cpp
   /*** Load font. ***/
@@ -268,9 +266,8 @@ We initialize `SDL_ttf` similarly to how we initialize `SDL_image` by calling
   }
 ```
 
-Then we load the font with
-[`TTF_OpenFont()`](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC14) and create a new
-texture for the string "Hello world!".
+Then we load the font with [`TTF_OpenFont()`][3] and create a new texture for the string "Hello
+world!".
 
 ### The `close()` function
 
@@ -290,7 +287,7 @@ texture for the string "Hello world!".
   SDL_Quit();
 ```
 
-Standard closure procedure.
+Standard closing procedure.
 
 ### The `createTextureFromText()` function
 
@@ -320,11 +317,9 @@ SDL_Texture *createTextureFromText(const char * const text) {
 }
 ```
 
-The `createTextureFromText()` function is just the `loadTexture()` function from
-[Example 03](https://github.com/cj-dimaano/sdl-examples/tree/master/03_rendering-an-image),
-replacing `IMG_Load()` with
-[TTF_RenderText_Solid()](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC43) and
-accounting for the new function's parameters.
+The `createTextureFromText()` function is just the `loadTexture()` function from [Example 03][1],
+replacing `IMG_Load()` with [TTF_RenderText_Solid()][4] and accounting for the new function's
+parameters.
 
 ### The `main()` function
 
@@ -332,14 +327,25 @@ The main function is unchanged from the previous example.
 
 ---
 
-[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/03_rendering-an-image)
+[Previous][1]
 
 ## Resources
-* [Lazy Foo's Lesson 16](http://lazyfoo.net/tutorials/SDL/16_true_type_fonts/index.php)
-* [SDL_ttf](https://www.libsdl.org/projects/SDL_ttf/)
-* [TTF_Font](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC56)
-* [TTF_Init()](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC8)
-* [TTF_Quit()](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC10)
-* [TTF_OpenFont()](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC14)
-* [TTF_CloseFont()](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC18)
-* [TTF_RenderText_Solid()](https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC43)
+
+* [Lazy Foo's Lesson 16][5]
+* [SDL_ttf][6]
+* [TTF_Font][7]
+* [TTF_Init()][2]
+* [TTF_Quit()][8]
+* [TTF_OpenFont()][3]
+* [TTF_CloseFont()][9]
+* [TTF_RenderText_Solid()][4]
+
+[1]: ../03_rendering-an-image
+[2]: https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC8
+[3]: https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC14
+[4]: https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC43
+[5]: http://lazyfoo.net/tutorials/SDL/16_true_type_fonts/index.php
+[6]: https://www.libsdl.org/projects/SDL_ttf/
+[7]: https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC56
+[8]: https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC10
+[9]: https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html#SEC18

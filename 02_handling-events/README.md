@@ -1,6 +1,6 @@
 # Example 02 - Handling events
 
-![Example 02 Screenshot](https://github.com/cj-dimaano/sdl-examples/blob/master/screenshots/example02.gif)
+![Example 02 Screenshot](../screenshots/example02.gif)
 
 In this example, we create a window that listens for events then handles the `SDL_QUIT`,
 `SDL_KEYDOWN`, and `SDL_KEYUP` events. We also introduce a very common concept in game development:
@@ -11,8 +11,7 @@ Two other software engineering concepts are introduced here: event (or message) 
 abstraction (or separation of concerns). Very little discussion of these concepts will be provided
 in these examples.
 
-[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/01_creating-a-window) |
-[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/03_rendering-an-image)
+[Previous][1] | [Next][2]
 
 ## The Code
 
@@ -228,10 +227,9 @@ bool init() {
 }
 ```
 
-In [example 01](https://github.com/cj-dimaano/sdl-examples/tree/master/01_creating-a-window), the
-first things we do are initialize SDL, create a window, and get the window's surface. The `init()`
-function basically tucks all of that logic away into its own function with the added bonus of 
-initializing some colors to be used in the main loop.
+In [example 01][1], the first things we do are initialize SDL, create a window, and get the window's
+surface. The `init()` function basically tucks all of that logic away into its own function with the
+added bonus of  initializing some colors to be used in the main loop.
 
 ### The `close()` function
 
@@ -335,21 +333,26 @@ With the initialization and cleanup code moved into their own functions, the maj
 `main()` consists of the main loop. Inside the main loop, we handle any pending events on the event
 queue then update the window with the current active color.
 
-Event handling takes place in the inner `while` loop, calling
-[`SDL_PollEvent()`](http://wiki.libsdl.org/SDL_PollEvent) with the
-[`SDL_Event`](http://wiki.libsdl.org/SDL_Event) struct `evt` repeatedly until the event queue is
-empty.
+Event handling takes place in the inner `while` loop, calling [`SDL_PollEvent()`][3] with the
+[`SDL_Event`][4] struct `evt` repeatedly until the event queue is empty.
 
 Once the event queue is emptied, we change the color of the window and update the display as in
-[Example 01](https://github.com/cj-dimaano/sdl-examples/tree/master/01_creating-a-window).
+[Example 01][1].
 
 ---
 
-[Previous](https://github.com/cj-dimaano/sdl-examples/tree/master/01_creating-a-window) |
-[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/03_rendering-an-image)
+[Previous][1] | [Next][2]
 
 ## Resources
-* [Lazy Foo's Lesson 03](http://lazyfoo.net/tutorials/SDL/03_event_driven_programming/index.php)
-* [Lazy Foo's Lesson 04](http://lazyfoo.net/tutorials/SDL/04_key_presses/index.php)
-* [SDL_PollEvent()](http://wiki.libsdl.org/SDL_PollEvent)
-* [SDL_Event](http://wiki.libsdl.org/SDL_Event)
+
+* [Lazy Foo's Lesson 03][5]
+* [Lazy Foo's Lesson 04][6]
+* [SDL_PollEvent()][3]
+* [SDL_Event][4]
+
+[1]: ../01_creating-a-window
+[2]: ../03_rendering-an-image
+[3]: http://wiki.libsdl.org/SDL_PollEvent
+[4]: http://wiki.libsdl.org/SDL_Event
+[5]: http://lazyfoo.net/tutorials/SDL/03_event_driven_programming/index.php
+[6]: http://lazyfoo.net/tutorials/SDL/04_key_presses/index.php
