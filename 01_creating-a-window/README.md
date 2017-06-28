@@ -6,13 +6,11 @@ This example demonstrates how to create a new window with SDL.
 
 ## Getting Started
 
-Before diving right into the code, we need to set up our development environment.
-[Lazy Foo'][2] has excellent guides for setting up SDL on each major OS platform
-in his [Lesson 01][3] SDL tutorial.
+Before diving right into the code, we need to set up our development environment. [Lazy Foo'][2] has
+excellent guides for setting up SDL on each major OS platform in his [Lesson 01][3] SDL tutorial.
 
-> These examples are designed specifically for Linux using the [clang][4]
-> compiler and [Visual Studio Code][5]. Compiling is performed on the
-> command line via the makefile.
+> These examples are designed specifically for Linux using the [clang][4] compiler and
+> [Visual Studio Code][5]. Compiling is performed on the command line via the makefile.
 
 ## The Code
 
@@ -82,9 +80,8 @@ int main() {
   }
 ```
 
-First, we initialize SDL with [`SDL_Init()`][6]. This sets up the SDL
-subsystem. If any errors occur during initialization, we immediately log the error and terminate the
-program.
+First, we initialize SDL with [`SDL_Init()`][6]. This sets up the SDL subsystem. If any errors occur
+during initialization, we immediately log the error and terminate the program.
 
 > Handling errors wherever possible is a good habit to get into; it helps tremendously with
 > debugging. If speed is a concern, code profiling is the better way to decide where optimizations
@@ -104,9 +101,8 @@ program.
   }
 ```
 
-Assuming SDL initialized successfully, we create the window with
-[`SDL_CreateWindow()`][7], again, logging errors and
-terminating early if any are encountered.
+Assuming SDL initialized successfully, we create the window with [`SDL_CreateWindow()`][7], again,
+logging errors and terminating early if any are encountered.
 
 ### Step 3: Fill the window with a solid color
 
@@ -119,12 +115,9 @@ terminating early if any are encountered.
   SDL_UpdateWindowSurface(window);
 ```
 
-With the newly created window, we get its surface with
-[`SDL_GetWindowSurface()`][8], fill its color with a solid
-white using [`SDL_FillRect()`][9] and
-[`SDL_MapRGB()`][10], and update the screen with
-[`SDL_UpdateWindowSurface()`][11] so that the user can
-see the changes.
+With the newly created window, we get its surface with [`SDL_GetWindowSurface()`][8], fill its color
+with a solid white using [`SDL_FillRect()`][9] and [`SDL_MapRGB()`][10], and update the screen with
+[`SDL_UpdateWindowSurface()`][11] so that the user can see the changes.
 
 > For a discussion about the difference between a surface and a renderer in SDL, visit
 > [this link][12].
@@ -133,8 +126,7 @@ see the changes.
   SDL_Delay(2000);
 ```
 
-Once the window is updated, we wait 2 seconds with
-[`SDL_Delay()`][13].
+Once the window is updated, we wait 2 seconds with [`SDL_Delay()`][13].
 
 ### Step 4: Cleanup
 
@@ -144,9 +136,8 @@ Once the window is updated, we wait 2 seconds with
   SDL_Quit();
 ```
 
-Finally, we destroy the window with
-[`SDL_DestroyWindow()`][14] and clean up the SDL subsystems
-with [`SDL_Quit()`][15].
+Finally, we destroy the window with [`SDL_DestroyWindow()`][14] and clean up the SDL subsystems with
+[`SDL_Quit()`][15].
 
 > Always remember to clean up after yourself. If you allocate memory for anything, be sure to
 > deallocate that memory when you are finished. For SDL, this generally means calling the `Destroy`
