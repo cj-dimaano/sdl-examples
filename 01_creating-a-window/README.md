@@ -2,16 +2,16 @@
 
 This example demonstrates how to create a new window with SDL.
 
-[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/02_handling-events)
+[Next][1]
 
 ## Getting Started
 
 Before diving right into the code, we need to set up our development environment.
-[Lazy Foo'](http://lazyfoo.net/) has excellent guides for setting up SDL on each major OS platform
-in his [Lesson 01](http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php) SDL tutorial.
+[Lazy Foo'][2] has excellent guides for setting up SDL on each major OS platform
+in his [Lesson 01][3] SDL tutorial.
 
-> These examples are designed specifically for Linux using the [clang](https://clang.llvm.org/)
-> compiler and [Visual Studio Code](https://code.visualstudio.com/). Compiling is performed on the
+> These examples are designed specifically for Linux using the [clang][4]
+> compiler and [Visual Studio Code][5]. Compiling is performed on the
 > command line via the makefile.
 
 ## The Code
@@ -82,7 +82,7 @@ int main() {
   }
 ```
 
-First, we initialize SDL with [`SDL_Init()`](http://wiki.libsdl.org/SDL_Init). This sets up the SDL
+First, we initialize SDL with [`SDL_Init()`][6]. This sets up the SDL
 subsystem. If any errors occur during initialization, we immediately log the error and terminate the
 program.
 
@@ -105,7 +105,7 @@ program.
 ```
 
 Assuming SDL initialized successfully, we create the window with
-[`SDL_CreateWindow()`](http://wiki.libsdl.org/SDL_CreateWindow), again, logging errors and
+[`SDL_CreateWindow()`][7], again, logging errors and
 terminating early if any are encountered.
 
 ### Step 3: Fill the window with a solid color
@@ -120,21 +120,21 @@ terminating early if any are encountered.
 ```
 
 With the newly created window, we get its surface with
-[`SDL_GetWindowSurface()`](http://wiki.libsdl.org/SDL_GetWindowSurface), fill its color with a solid
-white using [`SDL_FillRect()`](http://wiki.libsdl.org/SDL_FillRect) and
-[`SDL_MapRGB()`](http://wiki.libsdl.org/SDL_MapRGB), and update the screen with
-[`SDL_UpdateWindowSurface()`](http://wiki.libsdl.org/SDL_UpdateWindowSurface) so that the user can
+[`SDL_GetWindowSurface()`][8], fill its color with a solid
+white using [`SDL_FillRect()`][9] and
+[`SDL_MapRGB()`][10], and update the screen with
+[`SDL_UpdateWindowSurface()`][11] so that the user can
 see the changes.
 
 > For a discussion about the difference between a surface and a renderer in SDL, visit
-> [this link](https://stackoverflow.com/questions/21007329/what-is-a-sdl-renderer).
+> [this link][12].
 
 ```cpp
   SDL_Delay(2000);
 ```
 
 Once the window is updated, we wait 2 seconds with
-[`SDL_Delay()`](http://wiki.libsdl.org/SDL_Delay).
+[`SDL_Delay()`][13].
 
 ### Step 4: Cleanup
 
@@ -145,8 +145,8 @@ Once the window is updated, we wait 2 seconds with
 ```
 
 Finally, we destroy the window with
-[`SDL_DestroyWindow()`](http://wiki.libsdl.org/SDL_DestroyWindow) and clean up the SDL subsystems
-with [`SDL_Quit()`](http://wiki.libsdl.org/SDL_Quit).
+[`SDL_DestroyWindow()`][14] and clean up the SDL subsystems
+with [`SDL_Quit()`][15].
 
 > Always remember to clean up after yourself. If you allocate memory for anything, be sure to
 > deallocate that memory when you are finished. For SDL, this generally means calling the `Destroy`
@@ -156,20 +156,38 @@ with [`SDL_Quit()`](http://wiki.libsdl.org/SDL_Quit).
 
 ---
 
-[Next](https://github.com/cj-dimaano/sdl-examples/tree/master/02_handling-events)
+[Next][1]
 
 ## Resources
-* [Lazy Foo's Lesson 01](http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php)
-* [SDL Logging](http://wiki.libsdl.org/CategoryLog)
+* [Lazy Foo's Lesson 01][3]
+* [SDL Logging][16]
 * SDL_Window
-* [SDL_Surface](https://wiki.libsdl.org/SDL_Surface)
-* [SDL_Init()](http://wiki.libsdl.org/SDL_Init)
-* [SDL_Quit()](http://wiki.libsdl.org/SDL_Quit)
-* [SDL_CreateWindow()](http://wiki.libsdl.org/SDL_CreateWindow)
-* [SDL_GetWindowSurface()](http://wiki.libsdl.org/SDL_GetWindowSurface)
-* [SDL_FillRect()](http://wiki.libsdl.org/SDL_FillRect)
-* [SDL_MapRGB()](http://wiki.libsdl.org/SDL_MapRGB)
-* [SDL_UpdateWindowSurface()](http://wiki.libsdl.org/SDL_UpdateWindowSurface)
-* [SDL_Delay()](http://wiki.libsdl.org/SDL_Delay)
-* [SDL_DestroyWindow()](http://wiki.libsdl.org/SDL_DestroyWindow)
-* [Surface VS Renderer](https://stackoverflow.com/questions/21007329/what-is-a-sdl-renderer)
+* [SDL_Surface][17]
+* [SDL_Init()][6]
+* [SDL_Quit()][15]
+* [SDL_CreateWindow()][7]
+* [SDL_GetWindowSurface()][8]
+* [SDL_FillRect()][9]
+* [SDL_MapRGB()][10]
+* [SDL_UpdateWindowSurface()][11]
+* [SDL_Delay()][13]
+* [SDL_DestroyWindow()][14]
+* [Surface VS Renderer][12]
+
+[1]: ../blob/master/02_handling-events
+[2]: http://lazyfoo.net/
+[3]: http://lazyfoo.net/tutorials/SDL/01_hello_SDL/index.php
+[4]: https://clang.llvm.org/
+[5]: https://code.visualstudio.com/
+[6]: http://wiki.libsdl.org/SDL_Init
+[7]: http://wiki.libsdl.org/SDL_CreateWindow
+[8]: http://wiki.libsdl.org/SDL_GetWindowSurface
+[9]: http://wiki.libsdl.org/SDL_FillRect
+[10]: http://wiki.libsdl.org/SDL_MapRGB
+[11]: http://wiki.libsdl.org/SDL_UpdateWindowSurface
+[12]: https://stackoverflow.com/questions/21007329/what-is-a-sdl-renderer
+[13]: http://wiki.libsdl.org/SDL_Delay
+[14]: http://wiki.libsdl.org/SDL_DestroyWindow
+[15]: http://wiki.libsdl.org/SDL_Quit
+[16]: http://wiki.libsdl.org/CategoryLog
+[17]: https://wiki.libsdl.org/SDL_Surface
